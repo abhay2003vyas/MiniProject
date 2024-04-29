@@ -199,29 +199,29 @@ showDepartment('civil');
   
 
 // JavaScript
-document.addEventListener('DOMContentLoaded', function() {
-    // Function to parse URL parameters
-    function getUrlParameter(name) {
-      name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-      var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-      var results = regex.exec(location.search);
-      return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-    };
+// document.addEventListener('DOMContentLoaded', function() {
+//     // Function to parse URL parameters
+//     function getUrlParameter(name) {
+//       name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+//       var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+//       var results = regex.exec(location.search);
+//       return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+//     };
   
-    // Fill form fields with data from QR code if available
-    var qrData = getUrlParameter('qrdata');
-    if (qrData) {
-      try {
-        var decodedData = JSON.parse(qrData);
-        // Autofill form fields
-        document.getElementById('qrData').value = qrData;
-        document.getElementById('name').value = decodedData.name || '';
-        document.getElementById('branch').value = decodedData.branch || '';
-        document.getElementById('prn').value = decodedData.prn || '';
-        document.getElementById('description').value = decodedData.description || '';
-      } catch (error) {
-        console.error('Error parsing JSON data:', error);
-      }
-    }
-  });
+//     // Fill form fields with data from QR code if available
+//     var qrData = getUrlParameter('qrdata');
+//     if (qrData) {
+//       try {
+//         var decodedData = JSON.parse(qrData);
+//         // Autofill form fields
+//         document.getElementById('qrData').value = qrData;
+//         document.getElementById('name').value = decodedData.name || '';
+//         document.getElementById('branch').value = decodedData.branch || '';
+//         document.getElementById('prn').value = decodedData.prn || '';
+//         document.getElementById('description').value = decodedData.description || '';
+//       } catch (error) {
+//         console.error('Error parsing JSON data:', error);
+//       }
+//     }
+//   });
   
