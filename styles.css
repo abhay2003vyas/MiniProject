@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: #fff;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .header nav h1 {
+    padding-left: 150px;
+    color: rgb(119, 119, 193);
+    margin: 0;
+  }
+  
+  .main {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    
+    background-color: rgb(39 39 86);
+  }
+  
+  .left-block {
+    font-size: 22px;
+    margin-top: -50px;
+    color: white;
+    width: 50%;
+    /* background-color: #f4f4f4; */
+    padding: 20px;
+  }
+  
+  .left-block .content ul {
+    padding-left: 20px;
+  }
+  
+  .right-block {
+    width: 30%;
+    background-color: #e8e8e8;
+    padding: 20px;
+    margin-top: -50px;
+    border-radius: 10px;
+  }
+  
+  .right-block .content {
+    text-align: center;
+  }
+  
+  .right-block .content form {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .right-block .content label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .right-block .content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  .right-block .content button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .right-block .content a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    margin-top: 10px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .header nav h1 {
+    margin: 0;
+  }
+  
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+  
+  .register-form {
+    width: 400px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: -20px;
+  }
+  
+  .register-form .content {
+    text-align: center;
+  }
+  
+  .register-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .register-form form {
+    text-align: left;
+  }
+  
+  .register-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .register-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  .register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .register-form p {
+    margin-top: 20px;
+  }
+  
+  .register-form a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+/* 
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .header nav h1 {
+    margin: 0;
+  }
+  
+  .main {
+    padding: 40px;
+  } */
+  
+  .complaint-section .content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .complaint-section h2 {
+    margin-top: 0;
+  }
+  
+  .complaint-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .complaint-buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .complaint-buttons button:hover {
+    background-color: #555;
+  }
+  
+  /* type 2 */
+  .graph {
+    display: flex;
+  }
+  
+  .description-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 50%;
+    padding-top: 80px;
+    float: rigth;
+    float: right;
+  }
+  
+  .description-section .description {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 400px;
+    margin-left: -50px;
+    padding: 20px;
+    height: 250px;
+    padding-top: -20px;
+    margin-top: -60px;
+  }
+  
+  .description-section .description h2 {
+    margin-top: 0;
+  }
+  
+  .complaint-section {
+    flex: 1;
+
+  }
+  
+  .complaint-section .content {
+    padding: 20px;
+  }
+  
+  .custom-pie-chart {
+    width: 100%;
+    height: 600px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+  .custom-pie-chart {
+    width: 100%; /* Adjust the width as needed */
+    height: 100%; /* Adjust the height as needed */
+    max-width: 330px; /* Optional: Set a maximum width */
+    max-height: 290px; /* Optional: Set a maximum height */
+    border-radius: 10px;
+    background-color: #fff7cc;
+    margin-left: 160px;
+  }
+.content h2{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(37, 37, 113);
+}

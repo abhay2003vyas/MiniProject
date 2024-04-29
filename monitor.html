@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Data Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            background-color: #fff;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .header nav h1 {
+            padding-left: 150px;
+            color: rgb(119, 119, 193);
+            margin: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #555;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 8px;
+            /* Decrease margin bottom */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+            /* Decrease the height of the textarea */
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header" style="background-color: white;">
+        <nav>
+            <h1>BIT Service Management</h1>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>QR Code Data Form</h1>
+        <form id="qrForm">
+            <label for="monitorNo">Monitor No:</label>
+            <input type="text" id="monitorNo" name="monitorNo"><br>
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department"><br>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location"><br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="branch">Branch:</label>
+            <input type="text" id="branch" name="branch" required><br>
+            <label for="prn">PRN No.:</label>
+            <input type="text" id="prn" name="prn" required><br>
+            <label for="description">Complaint Description:</label>
+            <textarea id="description" name="description" required></textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

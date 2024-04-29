@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIT Service Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header class="header" style="background-color: white;">
+        <nav>
+            <h1>BIT Service Management</h1>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="left-block">
+            <div class="content">
+                <h2>The only service desk built on Jira</h2>
+                <p>ITSM software features that unlock high-velocity teams</p>
+                <ul>
+                    <li>Each product on a free plan:</li>
+                    <li>Connect dev, IT Ops, and business teams on one platform</li>
+                    <li>Deliver great service experiences across teams, fast</li>
+                    <li>Collaborate on one platform</li>
+                    <li>Resolve incidents quickly</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="right-block">
+            <div class="content">
+                <h2>Login / Register</h2>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                    <button type="submit">Login</button>
+                    <a href="#">Register</a>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <section class="complaint-section" id="computer">
+        <!-- Computer Engineering -->
+        <section class="complaint-section">
+            <div class="content">
+                <h2>Department Wise Complaints</h2>
+                <div class="complaint-buttons">
+                    <button onclick="showDepartment('computer')">Computer Engineering</button>
+                    <button onclick="showDepartment('civil')">Civil Engineering</button>
+                    <button onclick="showDepartment('mechanical')">Mechanical Engineering</button>
+                    <button onclick="showDepartment('electrical')">Electrical Engineering</button>
+                    <!-- Add more buttons as needed -->
+                </div>
+            </div>
+        
+            <!-- Computer Engineering -->
+            <main class="graph" id="computer-graph" style="display: none;">
+                <div class="description-section">
+                    <div class="description">
+                        <h2>Computer Engineering</h2>
+                        <p>This is a dummy description for Computer Engineering complaints.</p>
+                    </div>
+                </div>
+                <section class="complaint-section" id="pie-chart-section-computer"style="margin-left: 200px;">
+                    <div class="content">
+                        <canvas id="pie-chart-computer" class="custom-pie-chart"></canvas>
+                    </div>
+                </section>
+            </main>
+        
+            <!-- Civil Engineering -->
+            <main class="graph" id="civil-graph" style="display: none;">
+                <div class="description-section">
+                    <div class="description">
+                        <h2>Civil Engineering</h2>
+                        <p>This is a dummy description for Civil Engineering complaints.</p>
+                    </div>
+                </div>
+                <section class="complaint-section" id="pie-chart-section-civil" style="margin-left: 200px;">
+                    <div class="content">
+                        <canvas id="pie-chart-civil" class="custom-pie-chart"></canvas>
+                    </div>
+                </section>
+            </main>
+        
+            <!-- Mechanical Engineering -->
+            <main class="graph" id="mechanical-graph" style="display: none;">
+                <div class="description-section">
+                    <div class="description">
+                        <h2>Mechanical Engineering</h2>
+                        <p>This is a dummy description for Mechanical Engineering complaints.</p>
+                    </div>
+                </div>
+                <section class="complaint-section" id="pie-chart-section-mechanical" style="margin-left: 200px;">
+                    <div class="content">
+                        <canvas id="pie-chart-mechanical" class="custom-pie-chart"></canvas>
+                    </div>
+                </section>
+            </main>
+        
+            <!-- Electrical Engineering -->
+            <main class="graph" id="electrical-graph" style="display: none;">
+                <div class="description-section">
+                    <div class="description">
+                        <h2>Electrical Engineering</h2>
+                        <p>This is a dummy description for Electrical Engineering complaints.</p>
+                    </div>
+                </div>
+                <section class="complaint-section" id="pie-chart-section-electrical" style="margin-left: 200px;">
+                    <div class="content">
+                        <canvas id="pie-chart-electrical" class="custom-pie-chart"></canvas>
+                    </div>
+                </section>
+            </main>
+        </section>
+        
+
+    <script src="script.js"></script>
+</body>
+
+</html>
